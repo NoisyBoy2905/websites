@@ -16,6 +16,7 @@
       --muted: #55524b;
       --line: #d9d3c5;
       --accent: #c8361f;
+      --on-accent: #ffffff;
     }
     @media (prefers-color-scheme: dark) {
       :root {
@@ -25,6 +26,7 @@
         --muted: #b3ada0;
         --line: #36332c;
         --accent: #ff7a5c;
+        --on-accent: #161512;
       }
     }
     * { box-sizing: border-box; }
@@ -77,9 +79,54 @@
       color: var(--accent);
       margin-bottom: 0.4rem;
     }
+    .head-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.75rem; margin: -2rem 0 3.5rem; }
+    .btn {
+      display: inline-block;
+      padding: 0.7rem 1.4rem;
+      border-radius: 999px;
+      border: 2px solid var(--ink);
+      color: var(--ink);
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .btn-fill { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
+    .btn:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+    section { margin-top: 5rem; }
+    .steps { list-style: none; counter-reset: step; padding: 0; margin: 0; display: grid; gap: 1.5rem; }
+    .steps li { counter-increment: step; }
+    .steps li::before {
+      content: counter(step);
+      display: block;
+      font-family: "Fraunces", Georgia, serif;
+      font-weight: 800;
+      font-size: 2.6rem;
+      line-height: 1;
+      color: var(--accent);
+      margin-bottom: 0.4rem;
+    }
+    .steps h3, .price-card h3 { font-family: "Fraunces", Georgia, serif; font-weight: 600; font-size: 1.3rem; margin: 0 0 0.3rem; }
+    .steps p { margin: 0; color: var(--muted); }
+    .prices { display: grid; gap: 1.5rem; }
+    .price-card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      padding: 1.6rem 1.6rem 1.4rem;
+    }
+    .price-card.main { border: 2px solid var(--accent); }
+    .amount { font-family: "Fraunces", Georgia, serif; font-weight: 800; font-size: 2.8rem; line-height: 1; margin: 0.4rem 0 1rem; }
+    .amount small { font-family: "Work Sans", system-ui, sans-serif; font-weight: 500; font-size: 1rem; color: var(--muted); }
+    .price-card ul { margin: 0; padding-left: 1.2rem; color: var(--muted); }
+    .price-card li { margin-bottom: 0.3rem; }
+    .price-note { color: var(--muted); margin: 1.25rem 0 0; }
+    .contact { text-align: center; }
+    .contact p { color: var(--muted); max-width: 32rem; margin: 0 auto 1.5rem; }
     footer { margin-top: 4rem; color: var(--muted); font-size: 0.9rem; }
     footer a { color: var(--accent); }
-    @media (min-width: 720px) { .sites { grid-template-columns: repeat(2, 1fr); } }
+    @media (min-width: 720px) {
+      .sites, .prices { grid-template-columns: repeat(2, 1fr); }
+      .steps { grid-template-columns: repeat(4, 1fr); }
+    }
     @media (prefers-reduced-motion: reduce) { .site { transition: none; } }
   </style>
 </head>
@@ -88,6 +135,10 @@
     <div class="page-head">
       <h1>Websites for local businesses<span>.</span></h1>
       <p class="intro">I'm Micha, a software development student in Dartford. I build fast, simple websites for local trades, salons, garages and shops. They work on phones, load quickly and get you calls.</p>
+      <div class="head-links">
+        <a class="btn btn-fill" href="#prices">See prices</a>
+        <a class="btn" href="#contact">Get in touch</a>
+      </div>
 
       <h2 class="label">Work</h2>
     </div>
@@ -143,6 +194,63 @@
         </a>
       </li>
     </ul>
+
+    <section id="how">
+      <h2 class="label">How it works</h2>
+      <ol class="steps">
+        <li>
+          <h3>Quick chat</h3>
+          <p>Tell me about your business, your customers and what makes you different. Ten minutes on the phone or by email.</p>
+        </li>
+        <li>
+          <h3>Free mockup</h3>
+          <p>I build your homepage for free so you can see it on your own phone before you pay anything.</p>
+        </li>
+        <li>
+          <h3>Your changes</h3>
+          <p>Tell me what to change. Wording, colours, photos. We go back and forth until you're happy.</p>
+        </li>
+        <li>
+          <h3>Live</h3>
+          <p>I put it online on your own web address and connect your quote form to your phone. Usually within a week.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section id="prices">
+      <h2 class="label">Prices</h2>
+      <div class="prices">
+        <div class="price-card main">
+          <h3>Your website</h3>
+          <p class="amount">£250 <small>one-off</small></p>
+          <ul>
+            <li>A design made for your business, not a template</li>
+            <li>Works on phones, with a big call button</li>
+            <li>Quote form that emails you straight away</li>
+            <li>Your services, prices, reviews and areas covered</li>
+            <li>Set up so Google knows where you work and when you're open</li>
+            <li>Free hosting, so there's no monthly fee to keep it online</li>
+          </ul>
+        </div>
+        <div class="price-card">
+          <h3>Updates</h3>
+          <p class="amount">£15 <small>a month, optional</small></p>
+          <ul>
+            <li>Change prices, hours, photos or wording whenever you need</li>
+            <li>New reviews added as they come in</li>
+            <li>I keep your quote form working</li>
+            <li>Cancel any time</li>
+          </ul>
+        </div>
+      </div>
+      <p class="price-note">You'll also need a web address, like yourbusiness.co.uk. It's around £10 a year, registered in your name so you always own it. I'll set it up for you.</p>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2 class="label">Get in touch</h2>
+      <p>Want a free mockup of your homepage? Send me your business name and I'll get back to you within a day.</p>
+      <a class="btn btn-fill" href="mailto:websitesbymicha@outlook.com?subject=Free%20website%20mockup">websitesbymicha@outlook.com</a>
+    </section>
 
     <footer>
       <p>Code on <a href="https://github.com/NoisyBoy2905/websites">GitHub</a>.</p>
