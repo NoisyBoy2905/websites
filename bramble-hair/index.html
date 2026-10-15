@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" data-storage-key="bramble-settings">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bramble Hair Studio | Hair Salon in Wilmington, Dartford</title>
+  <meta name="description" content="Small, owner-run hair salon in Wilmington, Dartford. Cuts, colour, balayage, curly hair and kids' cuts. Free consultations and late opening on Thursdays.">
+  <meta name="theme-color" content="#1f3a2e">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='16' fill='%231f3a2e'/%3E%3Cpath d='M9 26V14a7 7 0 0 1 14 0v12' fill='none' stroke='%23d9b26a' stroke-width='3'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:ital,wght@0,700;0,800;1,700&family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HairSalon",
+    "name": "Bramble Hair Studio",
+    "description": "Small, owner-run hair salon in Wilmington, Dartford. Cuts, colour, balayage, curly hair and kids' cuts.",
+    "telephone": "+447700900321",
+    "email": "hello@example.com",
+    "priceRange": "££",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Wilmington",
+      "addressRegion": "Kent",
+      "addressCountry": "GB"
+    },
+    "areaServed": ["Wilmington", "Dartford", "Joydens Wood", "Hextable", "Sutton-at-Hone", "Bexley", "Crayford", "Swanley"],
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday", "Wednesday"], "opens": "09:00", "closes": "17:30" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Thursday", "opens": "09:00", "closes": "20:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "09:00", "closes": "18:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:30", "closes": "16:00" }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <header class="site-header">
+    <a href="#" class="logo"><span class="logo-arch" aria-hidden="true"></span>Bramble <span>Hair Studio</span></a>
+    <div class="header-actions">
+      <a href="tel:+447700900321" class="btn btn-solid header-call">07700 900321</a>
+      <button type="button" class="btn-settings" id="settings-toggle" aria-expanded="false" aria-controls="settings-panel" aria-label="Display settings">⚙</button>
+    </div>
+
+    <div class="settings-panel" id="settings-panel" hidden>
+      <h2 class="settings-title">Display settings</h2>
+      <fieldset>
+        <legend>Theme</legend>
+        <label><input type="radio" name="theme" value="light"> Light</label>
+        <label><input type="radio" name="theme" value="dark"> Dark</label>
+      </fieldset>
+      <fieldset>
+        <legend>Text size</legend>
+        <label><input type="radio" name="textsize" value="normal"> Normal</label>
+        <label><input type="radio" name="textsize" value="large"> Large</label>
+      </fieldset>
+      <fieldset>
+        <legend>Motion</legend>
+        <label><input type="checkbox" name="reducemotion" id="reducemotion"> Reduce animations</label>
+      </fieldset>
+      <button type="button" class="btn btn-line btn-small" id="settings-close">Done</button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="hero">
+      <div class="hero-text">
+        <p class="kicker">Wilmington, Dartford</p>
+        <h1>Good hair, no fuss. A small salon that knows your name.</h1>
+        <p class="hero-sub">I'm Ellie. I opened Bramble so people could get a great cut without the big-salon price or the hard sell. Every appointment starts with a proper chat about what you actually want.</p>
+        <div class="hero-buttons">
+          <a href="#quote" class="btn btn-solid">Book an appointment</a>
+          <a href="tel:+447700900321" class="btn btn-line">Call the salon</a>
+        </div>
+      </div>
+
+      <aside class="hours-arch" aria-label="Opening hours">
+        <p class="open-badge" id="open-now" data-hours='[null, null, ["09:00","17:30"], ["09:00","17:30"], ["09:00","20:00"], ["09:00","18:00"], ["08:30","16:00"]]'>Opening hours</p>
+        <dl class="hours">
+          <div data-day="2"><dt>Tuesday</dt><dd>9am – 5:30pm</dd></div>
+          <div data-day="3"><dt>Wednesday</dt><dd>9am – 5:30pm</dd></div>
+          <div data-day="4"><dt>Thursday</dt><dd>9am – 8pm</dd></div>
+          <div data-day="5"><dt>Friday</dt><dd>9am – 6pm</dd></div>
+          <div data-day="6"><dt>Saturday</dt><dd>8:30am – 4pm</dd></div>
+          <div data-day="0 1"><dt>Sun &amp; Mon</dt><dd>Closed</dd></div>
+        </dl>
+      </aside>
+    </section>
+
+    <section class="trust">
+      <ul>
+        <li>Free consultations</li>
+        <li>4.9★ from 210 Google reviews</li>
+        <li>Late opening Thursdays</li>
+        <li>Curly hair specialist</li>
+      </ul>
+    </section>
+
+    <section class="services" id="services">
+      <h2>What we do</h2>
+      <p class="section-intro">Prices depend on hair length and thickness. You'll get the exact price at your free consultation, before we start.</p>
+      <div class="service-grid">
+        <article class="service">
+          <h3>Cut &amp; blow-dry</h3>
+          <p>A cut that grows out well, so you're not back in six weeks wondering what happened.</p>
+          <p class="price">From £42</p>
+        </article>
+        <article class="service">
+          <h3>Colour &amp; highlights</h3>
+          <p>Root touch-ups, full colour, foils and toners. Covering greys without that flat, solid look.</p>
+          <p class="price">From £65</p>
+        </article>
+        <article class="service">
+          <h3>Balayage</h3>
+          <p>Soft, hand-painted colour that grows out without a hard line. Bring a photo of what you like.</p>
+          <p class="price">From £120</p>
+        </article>
+        <article class="service service-feature">
+          <h3>Curly cuts</h3>
+          <p>Cut dry, curl by curl. No thinning scissors and no straightening it out first.</p>
+          <p class="price">From £50</p>
+        </article>
+        <article class="service">
+          <h3>Men's &amp; kids' cuts</h3>
+          <p>Quick, tidy and no rush. Under-12s are £18, and first haircuts come with a certificate.</p>
+          <p class="price">From £18</p>
+        </article>
+        <article class="service">
+          <h3>Weddings &amp; occasions</h3>
+          <p>A trial a few weeks before, then I come to you on the day, so you're not rushing to the salon.</p>
+          <p class="price">Trial from £60</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="about-arch" aria-hidden="true">E</div>
+      <div>
+        <h2>Hi, I'm Ellie</h2>
+        <p>I trained in a busy London salon and spent nine years there before coming home to Wilmington. I opened Bramble in 2019 with two chairs and a kettle. We've grown to four chairs, but the kettle's the same.</p>
+        <p>Jade does our kids' cuts and most of the curly hair, and Tom looks after the men. I do the colour. We'll always tell you if what you want won't work on your hair, and what will.</p>
+      </div>
+    </section>
+
+    <section class="areas" id="areas">
+      <h2>Where our clients come from</h2>
+      <ul class="area-list">
+        <li>Wilmington</li>
+        <li>Dartford</li>
+        <li>Joydens Wood</li>
+        <li>Hextable</li>
+        <li>Sutton-at-Hone</li>
+        <li>Bexley</li>
+        <li>Crayford</li>
+        <li>Swanley</li>
+      </ul>
+      <p class="area-note">Free parking on the road outside, and we're two minutes from the 428 bus stop.</p>
+    </section>
+
+    <section class="reviews" id="reviews">
+      <h2>What clients say</h2>
+      <blockquote class="review">
+        <p>Ellie is the first person who's known what to do with my curls. No frizz, no thinning scissors, and it still looked good on day four.</p>
+        <cite>Grace H., Wilmington</cite>
+      </blockquote>
+      <blockquote class="review">
+        <p>Booked my son in for his first haircut. Jade had him laughing the whole time and gave us a bit of his hair in an envelope.</p>
+        <cite>Dan R., Dartford</cite>
+      </blockquote>
+      <blockquote class="review">
+        <p>My balayage looks exactly like the photo I showed her. She told me upfront it would take two sessions to get there without wrecking my hair, and she was right.</p>
+        <cite>Priti S., Bexley</cite>
+      </blockquote>
+    </section>
+
+    <section class="faq" id="faq">
+      <h2>Good to know</h2>
+      <details>
+        <summary>Do I need a patch test before colour?</summary>
+        <p>Yes, if you're new to us or it's been six months since your last colour. Pop in at least 48 hours before your appointment. It takes two minutes and it's free.</p>
+      </details>
+      <details>
+        <summary>What if I need to cancel?</summary>
+        <p>Just give us 24 hours' notice by phone or text. Things happen, so we won't charge for the first late cancellation.</p>
+      </details>
+      <details>
+        <summary>Can I bring a photo?</summary>
+        <p>Please do. Bring a few, and one you don't like as well. It helps more than you'd think.</p>
+      </details>
+      <details>
+        <summary>Is there parking?</summary>
+        <p>Yes, free on the road outside. There's also a step-free entrance and a chair that lowers for wheelchair users.</p>
+      </details>
+    </section>
+
+    <section class="quote" id="quote">
+      <h2>Book an appointment</h2>
+      <p class="section-intro">Send a request and we'll text you back with times today. Prefer to talk? Ring 07700 900321.</p>
+      <form action="https://formspree.io/f/xzedyzlo" method="POST" class="quote-form" id="quote-form" novalidate
+        data-thanks="Thanks {name}, we'll text you some times today."
+        data-failed="Sorry, that didn't send. Please ring us on 07700 900321 instead.">
+        <input type="hidden" name="_subject" value="Bramble Hair: new booking request">
+        <input type="text" name="_gotcha" class="trap" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+        <label for="name">Your name</label>
+        <input type="text" id="name" name="name" autocomplete="name" required aria-describedby="name-error" data-error="Please enter your name.">
+        <p class="field-error" id="name-error"></p>
+
+        <label for="phone">Mobile number</label>
+        <input type="tel" id="phone" name="phone" autocomplete="tel" inputmode="tel" required aria-describedby="phone-error" data-error="Please enter a mobile number we can text.">
+        <p class="field-error" id="phone-error"></p>
+
+        <label for="service">What would you like?</label>
+        <select id="service" name="service" required aria-describedby="service-error" data-error="Please choose a service.">
+          <option value="">Choose a service</option>
+          <option>Cut &amp; blow-dry</option>
+          <option>Colour &amp; highlights</option>
+          <option>Balayage</option>
+          <option>Curly cut</option>
+          <option>Men's or kids' cut</option>
+          <option>Wedding or occasion</option>
+          <option>Not sure, I'd like a consultation</option>
+        </select>
+        <p class="field-error" id="service-error"></p>
+
+        <label for="when">Best days or times <span class="optional">(optional)</span></label>
+        <input type="text" id="when" name="when" placeholder="e.g. Thursday evening or Saturday morning">
+
+        <button type="submit" class="btn btn-solid">Send request</button>
+        <p class="form-message" id="form-message" aria-live="polite"></p>
+      </form>
+    </section>
+
+  </main>
+
+  <nav class="call-bar" aria-label="Quick contact">
+    <a href="tel:+447700900321" class="call-bar-call">Call</a>
+    <a href="#quote" class="call-bar-book">Book</a>
+  </nav>
+
+  <footer class="site-footer">
+    <p><a href="tel:+447700900321">07700 900321</a> · <a href="mailto:hello@example.com">hello@example.com</a></p>
+    <p>Tue–Wed 9am–5:30pm · Thu 9am–8pm · Fri 9am–6pm · Sat 8:30am–4pm</p>
+    <p>© <span id="year">2026</span> Bramble Hair Studio</p>
+    <p class="demo-note">Concept site. Bramble Hair Studio is a fictional business, and its reviews and details are made up for demonstration.</p>
+  </footer>
+
+</body>
+</html>

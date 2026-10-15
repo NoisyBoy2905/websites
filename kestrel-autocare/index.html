@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" data-storage-key="kestrel-settings">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kestrel Autocare | MOT, Servicing &amp; Repairs in Crayford</title>
+  <meta name="description" content="Independent garage in Crayford. MOTs while you wait, servicing, brakes and diagnostics. Photos of every fault before any extra work, and nothing done without your OK.">
+  <meta name="theme-color" content="#16181b">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%23f7d117'/%3E%3Ctext x='16' y='22' font-family='Arial' font-weight='900' font-size='16' text-anchor='middle' fill='%2316181b'%3EK%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@700;800&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoRepair",
+    "name": "Kestrel Autocare",
+    "description": "Independent garage in Crayford. MOTs while you wait, servicing, brakes and diagnostics.",
+    "telephone": "+447700900654",
+    "email": "hello@example.com",
+    "priceRange": "££",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Crayford",
+      "addressRegion": "Kent",
+      "addressCountry": "GB"
+    },
+    "areaServed": ["Crayford", "Dartford", "Bexleyheath", "Erith", "Slade Green", "Barnehurst", "Stone", "Wilmington"],
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "08:00", "closes": "18:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:00", "closes": "13:00" }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <header class="site-header">
+    <a href="#" class="logo"><span class="plate">KESTREL</span><span class="logo-sub">Autocare</span></a>
+    <div class="header-actions">
+      <a href="tel:+447700900654" class="btn btn-lime header-call">07700 900654</a>
+      <button type="button" class="btn-settings" id="settings-toggle" aria-expanded="false" aria-controls="settings-panel" aria-label="Display settings">⚙</button>
+    </div>
+
+    <div class="settings-panel" id="settings-panel" hidden>
+      <h2 class="settings-title">Display settings</h2>
+      <fieldset>
+        <legend>Theme</legend>
+        <label><input type="radio" name="theme" value="dark"> Dark</label>
+        <label><input type="radio" name="theme" value="light"> Light</label>
+      </fieldset>
+      <fieldset>
+        <legend>Text size</legend>
+        <label><input type="radio" name="textsize" value="normal"> Normal</label>
+        <label><input type="radio" name="textsize" value="large"> Large</label>
+      </fieldset>
+      <fieldset>
+        <legend>Motion</legend>
+        <label><input type="checkbox" name="reducemotion" id="reducemotion"> Reduce animations</label>
+      </fieldset>
+      <button type="button" class="btn btn-ghost btn-small" id="settings-close">Done</button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="hero">
+      <div class="hero-text">
+        <h1>MOTs and repairs in Crayford. You see the fault before you pay.</h1>
+        <p class="hero-sub">I'm Dev. If I find something wrong with your car, I'll text you a photo and a price, and nothing gets done until you say yes. No surprise bills at the counter.</p>
+        <div class="hero-buttons">
+          <a href="#quote" class="btn btn-lime">Book an MOT</a>
+          <a href="tel:+447700900654" class="btn btn-ghost">Call 07700 900654</a>
+        </div>
+      </div>
+
+      <aside class="steps-card" aria-label="How I work">
+        <p class="open-badge" id="open-now" data-hours='[null, ["08:00","18:00"], ["08:00","18:00"], ["08:00","18:00"], ["08:00","18:00"], ["08:00","18:00"], ["08:00","13:00"]]'>Mon–Fri 8am–6pm · Sat 8am–1pm</p>
+        <ol class="steps">
+          <li><strong>I check it.</strong> MOT or service, with you in the waiting room or at work.</li>
+          <li><strong>I show you.</strong> A photo or video of anything worn, broken or leaking.</li>
+          <li><strong>You decide.</strong> A fixed price for each job. Say yes, no, or not yet.</li>
+        </ol>
+      </aside>
+    </section>
+
+    <div class="tread" aria-hidden="true"></div>
+
+    <section class="trust">
+      <ul>
+        <li>MOT while you wait</li>
+        <li>4.8★ from 320 Google reviews</li>
+        <li>Free collection within 3 miles</li>
+        <li>12-month parts &amp; labour warranty</li>
+      </ul>
+    </section>
+
+    <section class="services" id="services">
+      <h2>Prices</h2>
+      <p class="section-intro">Prices for a normal family car, including VAT. Vans and big 4x4s cost a bit more, and I'll tell you before you book.</p>
+      <div class="service-grid">
+        <article class="service service-feature">
+          <h3>MOT</h3>
+          <p>About 45 minutes. Wait with a coffee, or drop it off and I'll text you when it's done.</p>
+          <p class="price">£45</p>
+        </article>
+        <article class="service">
+          <h3>Interim service</h3>
+          <p>Oil, filter and a 40-point check. Good for cars that do lots of short trips.</p>
+          <p class="price">£129</p>
+        </article>
+        <article class="service">
+          <h3>Full service</h3>
+          <p>Oil, all filters, plugs where needed, brake check and a stamp in your service book.</p>
+          <p class="price">£199</p>
+        </article>
+        <article class="service">
+          <h3>Brakes</h3>
+          <p>Pads, discs and fluid. I'll show you how much is left before you decide.</p>
+          <p class="price">Front pads from £95</p>
+        </article>
+        <article class="service">
+          <h3>Warning lights</h3>
+          <p>Engine light on? I plug in, find the fault, and tell you what it is and what it'll cost.</p>
+          <p class="price">Diagnostic £60</p>
+        </article>
+        <article class="service">
+          <h3>Air con regas</h3>
+          <p>Blowing warm in summer or not clearing the windscreen in winter? Usually sorted in an hour.</p>
+          <p class="price">£69</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="about-mark" aria-hidden="true"><span>DEV</span></div>
+      <div>
+        <h2>I'm Dev</h2>
+        <p>I spent ten years as a technician at a main dealer, then opened Kestrel in 2015 so I could fix cars the way I'd want mine fixed. It's me, two mechanics and Sam on the phones.</p>
+        <p>I'll never tell you a part needs replacing without showing you why. If your car's not worth repairing, I'll say so, even if it means you don't spend money here.</p>
+      </div>
+    </section>
+
+    <section class="areas" id="areas">
+      <h2>Where my customers come from</h2>
+      <ul class="area-list">
+        <li>Crayford</li>
+        <li>Dartford</li>
+        <li>Bexleyheath</li>
+        <li>Erith</li>
+        <li>Slade Green</li>
+        <li>Barnehurst</li>
+        <li>Stone</li>
+        <li>Wilmington</li>
+      </ul>
+      <p class="area-note">Live within 3 miles? I'll collect your car from home or work and bring it back for free.</p>
+    </section>
+
+    <section class="reviews" id="reviews">
+      <h2>What drivers say</h2>
+      <blockquote class="review">
+        <p>Failed my MOT somewhere else on brakes and got quoted £380. Dev found a sticking caliper slider, cleaned it up and charged £45. Passed.</p>
+        <cite>Kerry M., Bexleyheath</cite>
+      </blockquote>
+      <blockquote class="review">
+        <p>Engine light came on. Dev sent me a video of the cracked coil pack and the price before he touched anything. No upsell.</p>
+        <cite>Imran A., Crayford</cite>
+      </blockquote>
+      <blockquote class="review">
+        <p>We run four vans and Kestrel keeps them all on the road. They text us when each MOT is due and fit us in around our jobs.</p>
+        <cite>Steve B., Erith</cite>
+      </blockquote>
+    </section>
+
+    <section class="faq" id="faq">
+      <h2>Questions</h2>
+      <details>
+        <summary>Can I wait while you do the MOT?</summary>
+        <p>Yes. It takes about 45 minutes, and there's a waiting room with Wi-Fi and a coffee machine.</p>
+      </details>
+      <details>
+        <summary>Will you do extra work without asking?</summary>
+        <p>Never. You get a photo and a price for each job, and I only start once you've said yes.</p>
+      </details>
+      <details>
+        <summary>What if my car fails its MOT?</summary>
+        <p>I'll show you what failed and give you a price to fix it. If you leave it with me to repair, the retest is free.</p>
+      </details>
+      <details>
+        <summary>Do you work on hybrids and electric cars?</summary>
+        <p>Yes, for servicing, brakes, tyres, suspension and MOTs. Battery and high-voltage repairs go to a specialist, and I'll tell you who.</p>
+      </details>
+      <details>
+        <summary>Do you do business accounts?</summary>
+        <p>Yes. I look after vans and cars for local firms, with MOT reminders and one invoice a month.</p>
+      </details>
+    </section>
+
+    <section class="quote" id="quote">
+      <h2>Book your car in</h2>
+      <p class="section-intro">Send your reg and what you need, and I'll text you back with a time today.</p>
+      <form action="https://formspree.io/f/xzedyzlo" method="POST" class="quote-form" id="quote-form" novalidate
+        data-thanks="Thanks {name}, I'll text you a time today."
+        data-failed="Sorry, that didn't send. Please ring me on 07700 900654 instead.">
+        <input type="hidden" name="_subject" value="Kestrel Autocare: new booking request">
+        <input type="text" name="_gotcha" class="trap" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+        <label for="reg">Your reg</label>
+        <input type="text" id="reg" name="reg" class="reg-input" autocomplete="off" autocapitalize="characters" spellcheck="false" maxlength="8" placeholder="AB12 CDE" required aria-describedby="reg-error" data-error="Please enter your number plate." data-min="2">
+        <p class="field-error" id="reg-error"></p>
+
+        <label for="name">Your name</label>
+        <input type="text" id="name" name="name" autocomplete="name" required aria-describedby="name-error" data-error="Please enter your name.">
+        <p class="field-error" id="name-error"></p>
+
+        <label for="phone">Mobile number</label>
+        <input type="tel" id="phone" name="phone" autocomplete="tel" inputmode="tel" required aria-describedby="phone-error" data-error="Please enter a mobile number I can text.">
+        <p class="field-error" id="phone-error"></p>
+
+        <label for="service">What does it need?</label>
+        <select id="service" name="service" required aria-describedby="service-error" data-error="Please choose what you need.">
+          <option value="">Choose one</option>
+          <option>MOT</option>
+          <option>Service</option>
+          <option>MOT and service</option>
+          <option>Warning light on</option>
+          <option>Brakes</option>
+          <option>Something else</option>
+        </select>
+        <p class="field-error" id="service-error"></p>
+
+        <button type="submit" class="btn btn-lime">Send</button>
+        <p class="form-message" id="form-message" aria-live="polite"></p>
+      </form>
+    </section>
+
+  </main>
+
+  <nav class="call-bar" aria-label="Quick contact">
+    <a href="tel:+447700900654" class="call-bar-call">Call Dev</a>
+    <a href="https://wa.me/447700900654?text=Hi%20Dev%2C%20I%27d%20like%20to%20book%20my%20car%20in." class="call-bar-wa">WhatsApp</a>
+  </nav>
+
+  <footer class="site-footer">
+    <p><a href="tel:+447700900654">07700 900654</a> · <a href="mailto:hello@example.com">hello@example.com</a></p>
+    <p>Mon–Fri 8am–6pm · Sat 8am–1pm · Closed Sundays</p>
+    <p>© <span id="year">2026</span> Kestrel Autocare</p>
+    <p class="demo-note">Concept site. Kestrel Autocare is a fictional business, and its reviews and details are made up for demonstration.</p>
+  </footer>
+
+</body>
+</html>
