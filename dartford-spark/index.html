@@ -11,6 +11,30 @@
   <meta name="theme-color" content="#111111">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%23111'/%3E%3Cpath d='M18 3 7 18h7l-2 11 11-15h-7z' fill='%23ffd400'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Electrician",
+    "name": "Dartford Spark Electrical",
+    "description": "Local electrician covering Dartford and North Kent. Rewires, fuse board upgrades, EV chargers, lighting, EICR testing and 24/7 emergency callouts.",
+    "telephone": "+447700900123",
+    "email": "hello@example.com",
+    "priceRange": "££",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Dartford",
+      "addressRegion": "Kent",
+      "addressCountry": "GB"
+    },
+    "areaServed": ["Dartford", "Greenhithe", "Swanscombe", "Crayford", "Bexley", "Swanley", "Gravesend", "Wilmington"],
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      "opens": "07:00",
+      "closes": "19:00"
+    }]
+  }
+  </script>
   <script src="script.js" defer></script>
 </head>
 <body>
@@ -80,33 +104,58 @@
           <img src="images/rewire.webp" width="800" height="600" alt="New wiring running through ceiling joists" loading="lazy">
           <h3>Full &amp; partial rewires</h3>
           <p>Older house with rubber or fabric wiring? I rewire room by room, so the rest of the house keeps its power while I work.</p>
+          <p class="price">3-bed house from £4,200</p>
         </article>
         <article class="service-card">
           <img src="images/fuseboard.webp" width="466" height="349" alt="Newly fitted consumer unit" loading="lazy">
           <h3>Fuse board upgrades</h3>
           <p>Your old fuse box swapped for a modern consumer unit with RCD protection. Most jobs are done in a day.</p>
+          <p class="price">From £450</p>
         </article>
         <article class="service-card">
           <img src="images/ev-charger.webp" width="387" height="290" alt="Home EV charger fitted on a brick wall" loading="lazy">
           <h3>EV charger installs</h3>
           <p>A charger fitted on your wall or driveway. I sort the network notification and the certificate for you.</p>
+          <p class="price">Fitted from £850</p>
         </article>
         <article class="service-card">
           <img src="images/lighting.webp" width="486" height="365" alt="Modern kitchen with pendant and down lights" loading="lazy">
           <h3>Lighting &amp; sockets</h3>
           <p>Extra sockets, garden lights, downlights and kitchen lighting. Cables chased into the wall and plastered over, not stuck on top.</p>
+          <p class="price">Extra socket from £95</p>
         </article>
         <article class="service-card">
           <img src="images/testing.webp" width="602" height="452" alt="Testing a socket with a multimeter" loading="lazy">
           <h3>Testing &amp; certificates</h3>
           <p>EICR reports for landlords, buyers and sellers. Your certificate is emailed within three working days.</p>
+          <p class="price">From £150</p>
         </article>
         <article class="service-card service-card-emergency">
           <div class="emergency-badge" aria-hidden="true">24/7</div>
           <h3>Emergency callouts</h3>
           <p>No power, or something keeps tripping? Ring me any time, day or night.</p>
+          <p class="price">Callout from £85</p>
         </article>
       </div>
+      <p class="price-note">Prices are a guide. You get a fixed price before I start, and it won't change.</p>
+    </section>
+
+    <section class="jobs" id="jobs">
+      <h2>Recent jobs</h2>
+      <ol class="job-list">
+        <li class="job">
+          <p class="job-meta"><span>Kitchen rewire</span><span>Bexley</span><span>2 days</span></p>
+          <p>New circuits for an induction hob and oven, six extra sockets and lights under the cupboards. Walls patched and ready to paint.</p>
+        </li>
+        <li class="job">
+          <p class="job-meta"><span>Fuse board swap</span><span>Dartford</span><span>1 day</span></p>
+          <p>A 1970s fuse box with wire fuses swapped for a 12-way board with surge protection. Power back on by 3pm.</p>
+        </li>
+        <li class="job">
+          <p class="job-meta"><span>EV charger</span><span>Greenhithe</span><span>Half a day</span></p>
+          <p>A 7kW charger on the side wall with the cable clipped neatly along the brick. I set the customer up on the app before I left.</p>
+        </li>
+      </ol>
     </section>
 
     <section class="about" id="about">
@@ -150,6 +199,30 @@
       </blockquote>
     </section>
 
+    <section class="faq" id="faq">
+      <h2>Common questions</h2>
+      <details>
+        <summary>How long does a full rewire take?</summary>
+        <p>A 3-bed house usually takes five to seven days. I work room by room, so you can keep living there while I do it.</p>
+      </details>
+      <details>
+        <summary>Do I need a new fuse board?</summary>
+        <p>If yours has wire fuses, no RCD switches, or a plastic case and it's older than about 2016, it's probably time. I'll look at it for free when I come round to quote.</p>
+      </details>
+      <details>
+        <summary>How much is an emergency callout?</summary>
+        <p>From £85, which covers the first hour. I'll tell you the price on the phone before I set off, so there are no surprises.</p>
+      </details>
+      <details>
+        <summary>Do you charge for quotes?</summary>
+        <p>No. Quotes are free and there's no pressure to book.</p>
+      </details>
+      <details>
+        <summary>Will I get a certificate?</summary>
+        <p>Yes. Any work that needs one gets a certificate, and I register it with building control for you. Keep it safe, because you'll need it when you sell the house.</p>
+      </details>
+    </section>
+
     <section class="quote" id="quote">
       <h2>Get a free quote</h2>
       <p>Tell me a bit about the job and I'll ring you back the same day. If I can price it over the phone, I will.</p>
@@ -174,6 +247,11 @@
     </section>
 
   </main>
+
+  <nav class="call-bar" aria-label="Quick contact">
+    <a href="tel:+447700900123" class="call-bar-call">Call Dan</a>
+    <a href="https://wa.me/447700900123?text=Hi%20Dan%2C%20I%27d%20like%20a%20quote%20for%20some%20electrical%20work." class="call-bar-wa">WhatsApp</a>
+  </nav>
 
   <footer class="site-footer">
     <p><a href="tel:+447700900123">07700 900123</a> · <a href="mailto:hello@example.com">hello@example.com</a></p>
