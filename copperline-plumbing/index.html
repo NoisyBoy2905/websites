@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" data-storage-key="copperline-settings">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Copperline Plumbing &amp; Heating | Gravesend Plumber &amp; Boiler Engineer</title>
+  <meta name="description" content="Gas Safe plumber and heating engineer in Gravesend, Dartford and Northfleet. Boiler swaps, servicing, leaks, radiators and landlord gas certificates. Fixed prices.">
+  <meta name="theme-color" content="#b45a24">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23f4eee4'/%3E%3Cpath d='M8 26V14a6 6 0 0 1 6-6h10' fill='none' stroke='%23b45a24' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Plumber",
+    "name": "Copperline Plumbing & Heating",
+    "description": "Gas Safe plumber and heating engineer covering Gravesend, Dartford and Northfleet. Boiler installs, servicing, leaks, radiators and landlord gas safety certificates.",
+    "telephone": "+447700900456",
+    "email": "hello@example.com",
+    "priceRange": "££",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Gravesend",
+      "addressRegion": "Kent",
+      "addressCountry": "GB"
+    },
+    "areaServed": ["Gravesend", "Northfleet", "Dartford", "Greenhithe", "Swanscombe", "Higham", "Meopham", "Istead Rise"],
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      "opens": "08:00",
+      "closes": "18:00"
+    }]
+  }
+  </script>
+</head>
+<body>
+
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <header class="site-header">
+    <a href="#" class="logo"><span class="logo-pipe" aria-hidden="true"></span>Copperline <small>Plumbing &amp; Heating</small></a>
+    <div class="header-actions">
+      <a href="tel:+447700900456" class="btn btn-solid header-call">07700 900456</a>
+      <button type="button" class="btn-settings" id="settings-toggle" aria-expanded="false" aria-controls="settings-panel" aria-label="Display settings">⚙</button>
+    </div>
+
+    <div class="settings-panel" id="settings-panel" hidden>
+      <h2 class="settings-title">Display settings</h2>
+      <fieldset>
+        <legend>Theme</legend>
+        <label><input type="radio" name="theme" value="light"> Light</label>
+        <label><input type="radio" name="theme" value="dark"> Dark</label>
+      </fieldset>
+      <fieldset>
+        <legend>Text size</legend>
+        <label><input type="radio" name="textsize" value="normal"> Normal</label>
+        <label><input type="radio" name="textsize" value="large"> Large</label>
+      </fieldset>
+      <fieldset>
+        <legend>Motion</legend>
+        <label><input type="checkbox" name="reducemotion" id="reducemotion"> Reduce animations</label>
+      </fieldset>
+      <button type="button" class="btn btn-line btn-small" id="settings-close">Done</button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="hero">
+      <div class="hero-text">
+        <p class="kicker">Gravesend · Dartford · Northfleet</p>
+        <h1>No heating? No hot water? I'll get it running.</h1>
+        <p class="hero-sub">I'm Marcus, a Gas Safe engineer. I fix boilers, leaks and radiators and fit new ones. You'll know the price before I pick up a spanner.</p>
+        <div class="hero-buttons">
+          <a href="tel:+447700900456" class="btn btn-solid">Call Marcus</a>
+          <a href="#quote" class="btn btn-line">Get a quote</a>
+        </div>
+      </div>
+
+      <aside class="slot-card" aria-label="Availability">
+        <p class="slot-label">Next free slot</p>
+        <p class="slot-day"><span id="next-slot">Tomorrow</span>, 8am</p>
+        <p class="slot-note">Leak or no heat? I keep two slots a day free for emergencies.</p>
+        <a href="tel:+447700900456" class="slot-call">Ring 07700 900456</a>
+      </aside>
+    </section>
+
+    <section class="trust">
+      <ul>
+        <li>Gas Safe registered</li>
+        <li>4.9★ from 140 Google reviews</li>
+        <li>Fully insured</li>
+        <li>No call-out fee for quotes</li>
+      </ul>
+    </section>
+
+    <section class="services" id="services">
+      <h2 class="pipe-heading">Price list</h2>
+      <p class="section-intro">Fixed prices for the jobs I do most. Anything bigger, I'll come round and quote for free.</p>
+      <ul class="price-list">
+        <li>
+          <p class="price-row"><span>Boiler service</span><span class="price">£85</span></p>
+          <p>Full service with a flue gas check, and the paperwork you need for your warranty.</p>
+        </li>
+        <li>
+          <p class="price-row"><span>Landlord gas safety certificate</span><span class="price">from £70</span></p>
+          <p>The CP12 check for rental homes. Add a boiler service for £60 more.</p>
+        </li>
+        <li>
+          <p class="price-row"><span>New combi boiler, fitted</span><span class="price">from £2,300</span></p>
+          <p>Old boiler out, new one in, usually in a day. Includes a magnetic filter and a smart thermostat.</p>
+        </li>
+        <li>
+          <p class="price-row"><span>Leak or burst pipe</span><span class="price">from £90</span></p>
+          <p>The first hour of a callout, any day. Most leaks are fixed inside it.</p>
+        </li>
+        <li>
+          <p class="price-row"><span>Radiator swap</span><span class="price">from £180</span></p>
+          <p>Same-size swap, drained, refilled and bled. Bigger radiators and new positions quoted on the day.</p>
+        </li>
+        <li>
+          <p class="price-row"><span>Powerflush</span><span class="price">from £400</span></p>
+          <p>For cold spots and noisy pipes. Clears the sludge so your radiators heat all the way up.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="jobs" id="jobs">
+      <h2 class="pipe-heading">This month</h2>
+      <ol class="job-list">
+        <li class="job">
+          <p class="job-title">Boiler swap</p>
+          <p class="job-meta">Northfleet · 1 day</p>
+          <p>A 20-year-old back boiler out, a combi in the kitchen cupboard, and the old hot water tank gone. The customer got a cupboard back.</p>
+        </li>
+        <li class="job">
+          <p class="job-title">Burst pipe</p>
+          <p class="job-meta">Gravesend · 50 minutes</p>
+          <p>A pipe under the bathroom floor split on a Saturday morning. Water off, floorboard up, new section in and the floor dried out.</p>
+        </li>
+        <li class="job">
+          <p class="job-title">Landlord certificates</p>
+          <p class="job-meta">Dartford · 4 flats, 1 day</p>
+          <p>Gas safety checks across a block of four flats, with every certificate emailed to the agent before 5pm.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section class="about" id="about">
+      <div class="monogram" aria-hidden="true">M</div>
+      <div>
+        <h2 class="pipe-heading">Hi, I'm Marcus</h2>
+        <p>I grew up in Gravesend and have been a heating engineer for 15 years. I started out fitting boilers for a big firm, then went on my own so I could do the job properly instead of quickly.</p>
+        <p>I wear shoe covers, I'll explain what's wrong in plain English, and if a repair isn't worth doing I'll tell you.</p>
+      </div>
+    </section>
+
+    <section class="areas" id="areas">
+      <h2 class="pipe-heading">Where I work</h2>
+      <ul class="area-list">
+        <li>Gravesend</li>
+        <li>Northfleet</li>
+        <li>Dartford</li>
+        <li>Greenhithe</li>
+        <li>Swanscombe</li>
+        <li>Higham</li>
+        <li>Meopham</li>
+        <li>Istead Rise</li>
+      </ul>
+    </section>
+
+    <section class="reviews" id="reviews">
+      <h2 class="pipe-heading">What people say</h2>
+      <blockquote class="review">
+        <p>Our boiler died in January with two kids in the house. Marcus came the same afternoon, got the heating back on with a part from his van, and charged less than I expected.</p>
+        <cite>Hannah R., Northfleet</cite>
+      </blockquote>
+      <blockquote class="review">
+        <p>I manage six rentals and Marcus does all the gas certificates. He books the tenants in himself and the paperwork lands in my inbox the same day.</p>
+        <cite>Gary P., Dartford</cite>
+      </blockquote>
+      <blockquote class="review">
+        <p>Two other plumbers told us we needed a new boiler. Marcus found a £40 part instead.</p>
+        <cite>Aisha B., Gravesend</cite>
+      </blockquote>
+    </section>
+
+    <section class="faq" id="faq">
+      <h2 class="pipe-heading">Questions</h2>
+      <details>
+        <summary>How often should my boiler be serviced?</summary>
+        <p>Once a year. Most boiler warranties need it, and it's when I catch small faults before they turn into a cold house in winter.</p>
+      </details>
+      <details>
+        <summary>Repair or replace: how do I know?</summary>
+        <p>If your boiler is under 10 years old, a repair is usually worth it. If it's older and breaking down every winter, a new one often pays for itself in gas. I'll give you both prices and let you decide.</p>
+      </details>
+      <details>
+        <summary>What should I do if a pipe bursts?</summary>
+        <p>Turn off the water at the stopcock, usually under the kitchen sink. Switch off the electrics if water is near sockets or lights. Then ring me.</p>
+      </details>
+      <details>
+        <summary>Do you charge to come and quote?</summary>
+        <p>No. Quotes are free. You only pay a callout fee if I'm coming to fix something.</p>
+      </details>
+      <details>
+        <summary>How do I pay?</summary>
+        <p>Card, bank transfer or cash when the job's done. For new boilers I take a deposit to order the boiler, and the rest on the day it's fitted.</p>
+      </details>
+    </section>
+
+    <section class="quote" id="quote">
+      <h2 class="pipe-heading">Get a quote</h2>
+      <p class="section-intro">Tell me what's going on and I'll ring you back today.</p>
+      <form action="https://formspree.io/f/xzedyzlo" method="POST" class="quote-form" id="quote-form" novalidate
+        data-thanks="Thanks {name}, I'll ring you back today."
+        data-failed="Sorry, that didn't send. Please ring me on 07700 900456 instead.">
+        <input type="hidden" name="_subject" value="Copperline: new quote request">
+        <input type="text" name="_gotcha" class="trap" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+        <label for="name">Your name</label>
+        <input type="text" id="name" name="name" autocomplete="name" required aria-describedby="name-error">
+        <p class="field-error" id="name-error"></p>
+
+        <label for="phone">Phone number</label>
+        <input type="tel" id="phone" name="phone" autocomplete="tel" inputmode="tel" required aria-describedby="phone-error">
+        <p class="field-error" id="phone-error"></p>
+
+        <label for="job">What's the problem?</label>
+        <textarea id="job" name="job" rows="4" required aria-describedby="job-error" placeholder="e.g. Boiler showing error F28, no hot water"></textarea>
+        <p class="field-error" id="job-error"></p>
+
+        <button type="submit" class="btn btn-solid">Send</button>
+        <p class="form-message" id="form-message" aria-live="polite"></p>
+      </form>
+    </section>
+
+  </main>
+
+  <nav class="call-bar" aria-label="Quick contact">
+    <a href="tel:+447700900456" class="call-bar-call">Call Marcus</a>
+    <a href="https://wa.me/447700900456?text=Hi%20Marcus%2C%20I%27d%20like%20a%20quote%20for%20some%20plumbing%20work." class="call-bar-wa">WhatsApp</a>
+  </nav>
+
+  <footer class="site-footer">
+    <p><a href="tel:+447700900456">07700 900456</a> · <a href="mailto:hello@example.com">hello@example.com</a></p>
+    <p>Mon–Sat 8am–6pm · Emergency leaks and no heat, 7 days</p>
+    <p>© <span id="year">2026</span> Copperline Plumbing &amp; Heating</p>
+    <p class="demo-note">Concept site. Copperline Plumbing &amp; Heating is a fictional business, and its reviews and details are made up for demonstration.</p>
+  </footer>
+
+</body>
+</html>

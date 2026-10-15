@@ -5,6 +5,8 @@ Websites I build for local businesses in Dartford and North Kent. Each site live
 | Site | What it is |
 |------|------------|
 | [Dartford Spark Electrical](dartford-spark/) | Demo site for a made-up electrician. Quote form that emails me (Formspree), dark/light mode, text size settings, works on phones. |
+| [Copperline Plumbing & Heating](copperline-plumbing/) | Demo site for a made-up plumber in Gravesend. Price list, next free slot card, FAQ. |
+| [Ridgeway Roofing](ridgeway-roofing/) | Demo site for a made-up roofer in Swanley. Free drone survey offer, how-it-works steps. |
 
 ## Live
 Hosted free on GitHub Pages: `https://noisyboy2905.github.io/websites/`
