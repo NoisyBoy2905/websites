@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dartford Spark Electrical | Local Electrician in Dartford</title>
+  <meta name="description" content="Friendly, fully insured local electrician covering Dartford and North Kent. Rewires, fuse boards, EV chargers and 24/7 emergency callouts. Free quotes.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@600;700;800&display=swap" rel="stylesheet">
+  <meta name="theme-color" content="#111111">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%23111'/%3E%3Cpath d='M18 3 7 18h7l-2 11 11-15h-7z' fill='%23ffd400'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <header class="site-header">
+    <a href="#" class="logo">Dartford Spark Electrical</a>
+    <div class="header-actions">
+      <a href="tel:+447700900123" class="btn btn-call">Call 07700 900123</a>
+      <button type="button" class="btn-settings" id="settings-toggle" aria-expanded="false" aria-controls="settings-panel" aria-label="Display settings">⚙</button>
+    </div>
+
+    <div class="settings-panel" id="settings-panel" hidden>
+      <h2 class="settings-title">Display settings</h2>
+
+      <fieldset>
+        <legend>Theme</legend>
+        <label><input type="radio" name="theme" value="dark"> Dark</label>
+        <label><input type="radio" name="theme" value="light"> Light</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Text size</legend>
+        <label><input type="radio" name="textsize" value="normal"> Normal</label>
+        <label><input type="radio" name="textsize" value="large"> Large</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Motion</legend>
+        <label><input type="checkbox" name="reducemotion" id="reducemotion"> Reduce animations</label>
+      </fieldset>
+
+      <button type="button" class="btn btn-outline btn-small" id="settings-close">Done</button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="hero">
+      <div class="hero-text">
+      <h1>Your local Dartford electrician. Same-week callouts.</h1>
+      <p class="hero-sub">I'm Dan. I rewire houses, fit fuse boards and EV chargers, and fix faults across Dartford and North Kent. You get a fixed price before I start, and the quote is free.</p>
+      <div class="hero-buttons">
+        <a href="tel:+447700900123" class="btn btn-call">Call now</a>
+        <a href="#quote" class="btn btn-outline">Get a free quote</a>
+      </div>
+      </div>
+      <img class="hero-img" src="images/hero.webp" width="678" height="452" fetchpriority="high" alt="Electrician testing a fuse board with a multimeter">
+    </section>
+
+    <div class="hazard" aria-hidden="true"></div>
+
+    <section class="trust">
+      <ul>
+        <li>NICEIC approved</li>
+        <li>5★ on Google</li>
+        <li>Fully insured</li>
+        <li>Free quotes</li>
+      </ul>
+    </section>
+
+    <section class="services" id="services">
+      <h2>What I do</h2>
+      <div class="service-grid">
+        <article class="service-card">
+          <img src="images/rewire.webp" width="800" height="600" alt="New wiring running through ceiling joists" loading="lazy">
+          <h3>Full &amp; partial rewires</h3>
+          <p>Older house with rubber or fabric wiring? I rewire room by room, so the rest of the house keeps its power while I work.</p>
+        </article>
+        <article class="service-card">
+          <img src="images/fuseboard.webp" width="466" height="349" alt="Newly fitted consumer unit" loading="lazy">
+          <h3>Fuse board upgrades</h3>
+          <p>Your old fuse box swapped for a modern consumer unit with RCD protection. Most jobs are done in a day.</p>
+        </article>
+        <article class="service-card">
+          <img src="images/ev-charger.webp" width="387" height="290" alt="Home EV charger fitted on a brick wall" loading="lazy">
+          <h3>EV charger installs</h3>
+          <p>A charger fitted on your wall or driveway. I sort the network notification and the certificate for you.</p>
+        </article>
+        <article class="service-card">
+          <img src="images/lighting.webp" width="486" height="365" alt="Modern kitchen with pendant and down lights" loading="lazy">
+          <h3>Lighting &amp; sockets</h3>
+          <p>Extra sockets, garden lights, downlights and kitchen lighting. Cables chased into the wall and plastered over, not stuck on top.</p>
+        </article>
+        <article class="service-card">
+          <img src="images/testing.webp" width="602" height="452" alt="Testing a socket with a multimeter" loading="lazy">
+          <h3>Testing &amp; certificates</h3>
+          <p>EICR reports for landlords, buyers and sellers. Your certificate is emailed within three working days.</p>
+        </article>
+        <article class="service-card service-card-emergency">
+          <div class="emergency-badge" aria-hidden="true">24/7</div>
+          <h3>Emergency callouts</h3>
+          <p>No power, or something keeps tripping? Ring me any time, day or night.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="about-photo">
+        <img src="images/about.webp" width="237" height="658" alt="Dan, the electrician behind Dartford Spark" loading="lazy">
+      </div>
+      <div class="about-text">
+        <h2>Hi, I'm Dan</h2>
+        <p>I've been wiring homes around Dartford for 12 years. I work on my own, so the person who quotes your job is the person who turns up to do it.</p>
+        <p>I'll tell you what needs doing and what can wait. Dust sheets go down before the tools come out, and I hoover up before I leave.</p>
+      </div>
+    </section>
+
+    <section class="areas" id="areas">
+      <h2>Areas covered</h2>
+      <ul class="area-list">
+        <li>Dartford</li>
+        <li>Greenhithe</li>
+        <li>Swanscombe</li>
+        <li>Crayford</li>
+        <li>Bexley</li>
+        <li>Swanley</li>
+        <li>Gravesend</li>
+        <li>Wilmington</li>
+      </ul>
+    </section>
+
+    <section class="reviews" id="reviews">
+      <h2>What customers say</h2>
+      <blockquote class="review">
+        <p>Dan rewired our 1930s semi in three days while we were still living in it. He hoovered up every evening, and the bill matched the quote to the penny.</p>
+        <cite>Sarah M., Wilmington</cite>
+      </blockquote>
+      <blockquote class="review">
+        <p>Our power went at 10pm on a Sunday. Dan was here by 11 and had it back on before midnight.</p>
+        <cite>James T., Greenhithe</cite>
+      </blockquote>
+      <blockquote class="review">
+        <p>He fitted our EV charger in a morning and showed us how the app works. Neat cable run and no mess.</p>
+        <cite>Priya K., Crayford</cite>
+      </blockquote>
+    </section>
+
+    <section class="quote" id="quote">
+      <h2>Get a free quote</h2>
+      <p>Tell me a bit about the job and I'll ring you back the same day. If I can price it over the phone, I will.</p>
+      <form action="https://formspree.io/f/xzedyzlo" method="POST" class="quote-form" id="quote-form" novalidate>
+        <input type="hidden" name="_subject" value="New quote request from the website">
+        <input type="text" name="_gotcha" class="trap" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <label for="name">Your name</label>
+        <input type="text" id="name" name="name" autocomplete="name" required aria-describedby="name-error">
+        <p class="field-error" id="name-error"></p>
+
+        <label for="phone">Phone number</label>
+        <input type="tel" id="phone" name="phone" autocomplete="tel" inputmode="tel" required aria-describedby="phone-error">
+        <p class="field-error" id="phone-error"></p>
+
+        <label for="job">What's the job?</label>
+        <textarea id="job" name="job" rows="4" required aria-describedby="job-error" placeholder="e.g. Two extra sockets in the living room"></textarea>
+        <p class="field-error" id="job-error"></p>
+
+        <button type="submit" class="btn btn-call">Send</button>
+        <p class="form-message" id="form-message" aria-live="polite"></p>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p><a href="tel:+447700900123">07700 900123</a> · <a href="mailto:hello@example.com">hello@example.com</a></p>
+    <p>Mon–Sat 7am–7pm · Emergency callouts 24/7</p>
+    <p>© <span id="year">2026</span> Dartford Spark Electrical</p>
+    <p class="demo-note">Concept site. Dartford Spark Electrical is a fictional business, and its reviews and details are made up for demonstration.</p>
+  </footer>
+
+</body>
+</html>
